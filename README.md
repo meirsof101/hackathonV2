@@ -1,33 +1,33 @@
-# hackathonV2
-A platform that alerts farmers about local market prices and connects them to nearby buyers or markets.
 # AgriConnect
 
-A platform that alerts farmers about local market prices and connects them to nearby buyers or markets.
+A smart farming market platform that alerts farmers about local market prices and connects them to nearby buyers or markets, empowering small-scale farmers with technology.
 
 ## Features
 
 - Real-time price alerts for crops
-- AI-powered price prediction
-- Market opportunities and buyer matching
-- Community farming network
+- AI-powered price prediction (up to 14 days ahead)
+- Market opportunities and instant buyer matching
+- Community farming network for sharing resources
 - Smart logistics and micro-finance integration
-- Works offline and on mobile
+- Works offline and on mobile devices
+- Secure, blockchain-verified transactions
+- Weather-smart pricing insights
 
 ## Live Demo
 
-Open [index.html](index.html) in your browser to view the platform demo.
+Open [index.html](index.html) in your browser to view the interactive platform demo.
 
 ## Getting Started
 
 1. Clone or download this repository.
-2. Open `index.html` in your web browser.
+2. Open `index.html` in your web browser (no server required).
 
 ## Technologies Used
 
 - HTML, CSS (TailwindCSS)
-- JavaScript
-- Chart.js
-- Font Awesome
+- JavaScript (vanilla)
+- Chart.js for data visualization
+- Font Awesome for icons
 
 ## Contact
 
@@ -36,4 +36,4 @@ Open [index.html](index.html) in your browser to view the platform demo.
 
 ---
 
-Empowering farmers with smart market connections.
+Empowering farmers with smart market connections across Africa.

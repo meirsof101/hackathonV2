@@ -58,18 +58,28 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation Bar -->
-    <div id="navbar-placeholder"></div>
-
-<script>
-  fetch('partials/navbar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbar-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading navbar:', error));
-</script>
-
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-farm-green rounded-full flex items-center justify-center">
+                        <i class="fas fa-seedling text-white"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-deep-forest">AgriConnect</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#dashboard" class="text-gray-700 hover:text-farm-green transition-colors">Dashboard</a>
+                    <a href="#markets" class="text-gray-700 hover:text-farm-green transition-colors">Markets</a>
+                    <a href="#alerts" class="text-gray-700 hover:text-farm-green transition-colors">Price Alerts</a>
+                    <a href="#connect" class="text-gray-700 hover:text-farm-green transition-colors">Connect</a>
+                </div>
+                <button id="mobile-menu" class="md:hidden">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <div class="gradient-bg pt-24 pb-16 relative overflow-hidden">
@@ -89,10 +99,9 @@
                 <button onclick="showDemo()" class="bg-harvest-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-600 transition-all transform hover:scale-105">
                     Start Selling Smart
                 </button>
-                <button onclick="window.location.href='test.html'" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-farm-green transition-all">
+                <button onclick="scrollToFeatures()" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-farm-green transition-all">
                     See How It Works
                 </button>
-
             </div>
         </div>
     </div>
@@ -629,16 +638,5 @@
             });
         });
     </script>
-    <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('mobile-menu');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('hidden');
-    });
-  });
-</script>
-
 </body>
 </html>
