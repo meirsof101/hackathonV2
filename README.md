@@ -15,7 +15,7 @@ A smart farming market platform that alerts farmers about local market prices an
 
 ## Live Demo
 
-Open [index.html](index.html) in your browser to view the interactive platform demo.
+Open [https://farmreach.netlify.app/](https://farmreach.netlify.app/) in your browser to view the interactive platform demo.
 
 ## Getting Started
 
