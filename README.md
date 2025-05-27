@@ -31,7 +31,7 @@ Open [https://farmreach.netlify.app/](https://farmreach.netlify.app/) in your br
 
 ## Contact
 
-- Email: info@agriconnect.co.ke
+- Email: fidelmwaro@gmail.com
 - Phone: +254 799 328 159
 
 ---
