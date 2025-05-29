@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AgriConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🌾 AgriConnect</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Register</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Create Your Farmer Account</h2>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="farmerName">Your Name *</label>
+                    <input type="text" id="farmerName" name="farmerName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                </div>
+
+                <div class="form-group">
+                    <label for="farmName">Farm Name *</label>
+                    <input type="text" id="farmName" name="farmName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Farm Location</label>
+                    <input type="text" id="location" name="location" placeholder="City, County">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="cropTypes">Main Crops</label>
+                    <input type="text" id="cropTypes" name="cropTypes" placeholder="e.g., Maize, Beans, Tomatoes">
+                </div>
+
+                <div class="form-group">
+                    <label for="farmSize">Farm Size</label>
+                    <select id="farmSize" name="farmSize">
+                        <option value="">Select farm size</option>
+                        <option value="small">Small (0-2 acres)</option>
+                        <option value="medium">Medium (2-10 acres)</option>
+                        <option value="large">Large (10+ acres)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+
+            <div id="message" class="message"></div>
+
+            <p class="auth-footer">
+                Already have an account? <a href="login.html">Login here</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

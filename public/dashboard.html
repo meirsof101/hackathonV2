@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AgriConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🌾 AgriConnect</h1>
+            <div class="nav-links">
+                <a href="/dashboard">Dashboard</a>
+                <span id="userWelcome">Welcome!</span>
+                <button id="logoutBtn" class="btn btn-small">Logout</button>
+                <a href="market.html">Market Place</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <div class="container">
+            <h1>Farmer Dashboard</h1>
+            
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3>Farm Profile</h3>
+                    <div id="profileInfo">
+                        <p><strong>Loading...</strong></p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Quick Actions</h3>
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary">Add Crop Record</button>
+                        <button class="btn btn-secondary" onclick="window.location.href='market.html'">View Market Prices</button>
+                        <button class="btn btn-secondary">Connect with Farmers</button>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Recent Activity</h3>
+                    <p>Welcome to AgriConnect! Start by exploring the platform features.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
